@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @media (min-width: 320px) and (max-width: 575.98px) {
+
+      /* My this code here is for viewport between 320-576 */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        display: none;
+      }
+
+      body {
+        background-color: #465C88;
+      }
+
+      h1 {
+        display: block;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+      /* My this code here is for viewport between 575.98px-768px */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        display: none;
+      }
+
+      body {
+        background-color: #FF7A30;
+      }
+
+      h2 {
+        display: block;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+
+      /* My this code here is for viewport between 767.98px-1024px */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        display: none;
+      }
+
+      body {
+        background-color: #E9E3DF;
+      }
+
+      h3 {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279.98px) {
+
+      /* My this code here is for viewport between 1023.98px-1280px */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        display: none;
+      }
+
+      body {
+        background-color: #A2D5C6;
+      }
+
+      h4 {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1280px) {
+
+      /* My this code here is for viewport between 1279.98px-above it(eg. 1440/1536/more) */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        display: none;
+      }
+
+      body {
+        background-color: #CFFFE2;
+      }
+
+      h5 {
+        display: block;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      font-weight: 900;
+      height: 100vh;
+    }
+    .box * {
+      font-size: 45px;
+      font-weight: 900;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box">
+    <h1>5: 320-576</h1>
+    <h2>4: 575.98px-768px</h2>
+    <h3>3: 767.98px-1024px</h3>
+    <h4>2: 1023.98px-1280px</h4>
+    <h5>1: 1279.98px-above it(eg. 1440/1536/more)</h5>
+  </div>
+</body>
+
+</html>
